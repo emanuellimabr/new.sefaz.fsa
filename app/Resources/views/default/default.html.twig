@@ -1,0 +1,623 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <iframe width='1000' style="width:100%;" height='135' frameborder='0' src='http://www.feiradesantana.ba.gov.br/sefaz/topo.asp'></iframe>
+    <div class="container-fluid">
+        <!-- navbar -->
+        <div class="navbar navbar-default yamm">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-grid" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">SEFAZ FSA</a>
+          </div>
+          <div id="navbar-collapse-grid" class="navbar-collapse collapse">            
+            <ul class="nav navbar-nav">
+              <!-- Grid 12 Menu -->
+              <li class="yamm"><a href="#">PÁGINA INICIAL</a></li>
+              <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">SERVIÇOS<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="grid-demo">
+                    <div class="row">
+                      <div class="col-sm-3"> 
+                        <br>
+                        <ul>
+                            <li class="dropdown-header">IPTU</li>
+                            <li><a href="#">O que é?</a></li>
+                            <li><a href="#">Como Calcular</a></li>
+                            <li><a href="#">Como Pagar</a></li>
+                            <li><a href="#">Onde Pagar</a></li>
+                            <li><a href="#">Posto de Atendimento</a></li>
+                            <li><a href="#">2ª Via de DAM</a></li>
+                            <li><a href="#">Alteração de Dados</a></li>
+                            <li><a href="#">Certidão de Primeiro Lançamento</a></li>
+                            <li><a href="#">Certidão Negativa</a></li>
+                            <li><a href="#">Consulta de Débitos</a></li>                            
+                            <li><a href="#">Todas as Opções</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <br>  
+                        <ul>
+                            <li class="dropdown-header">IMPOSTO SOBRE SERVIÇOS</li>
+                            <li><a href="#">Emissão da Nota</a></li>
+                            <li><a href="#">Cadastrar Nova Empresa</a></li>
+                            <li><a href="#">DECRETO Nº 8.471 – Regulamenta a NFS-e</a></li>
+                            <li><a href="#">Dúvidas Frequentes da Nota Eletrônica</a></li>      
+                            <br>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">TFF</li>
+                            <li><a href="#">O que é? </a></li>
+                            <li><a href="#">Parcelamento de Débito</a></li>
+                            <li><a href="#">Restituição de Importância</a></li>                            
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <br>
+                        <ul>
+                            <li class="dropdown-header">CADASTRO GERAL DE ATIVIDADES</li>
+                            <li><a href="#">Alteração de Dados</a></li>
+                            <li><a href="#">Certidão de Baixa</a></li>
+                            <li><a href="#">Declaração de Não Inscrito</a></li>
+                            <li><a href="#">Inscrição - Pessoa Física</a></li>
+                            <li><a href="#">Inscrição - Pesoa Jurídica</a></li>
+                            <br>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">TLL</li>
+                            <li><a href="#">O que é? </a></li>
+                            <li><a href="#">Como Calcular </a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <br>
+                        <ul>
+                            <li class="dropdown-header">IBTI</li>
+                            <li><a href="#">Declaração de Imunidade</a></li>
+                            <li><a href="#">Emissão de Guia de Recolhimento</a></li>
+                            <li><a href="#">Isenção - Pessoa Física (Servidor Público Municipal)</a></li>
+                            <li><a href="#">Restituição de Importância Recolhida a Maior</a></li>
+                            <li><a href="#">Restituição de Importância Recolhida em Duplicidade</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">PLANTÃO FISCAL</li>
+                            <li><a href="#">Atendimento Telefônico e Pessoal </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!--With Offsets 
+              -->
+              <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">SERVIÇOS ONLINE<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="grid-demo">
+                    <div class="row">
+                        <div class="col-sm-4">
+                        <br>
+                        <ul>
+                            <li class="dropdown-header">IPTU 2015</li>
+                            <li><a href="#">Revisão de IPTU</a></li>
+                            <li><a href="#">Recadastramento Imobiliário</a></li>
+                            <li><a href="#">DAM Exercício Atual</a></li>
+                            <li><a href="#">DAM Exercício Anteriores</a></li>
+                            <li><a href="#">Certidão Negativa de IPTU</a></li>
+                            <li><a href="#">Validar Certidão Negativa IPTU</a></li>
+                            <li><a href="#">Nota Feirense</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">ACESSO RESTRITO</li>
+                            <li><a href="#">Extranet</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-4">
+                        <br>
+                        <ul>
+                            <li class="dropdown-header">NOTA FISCAL ELETRÔNICA</li>
+                            <li><a href="#">Emissão da Nota Eletrônica</a></li>
+                            <li><a href="#">Lista de Substitutos Tributários</a></li>
+                            <li><a href="#">Verificação da Autenticidade da NFS-e</a></li>
+                            <li><a href="#">Cadastro de Empresas Para Notas</a></li> 
+                            <br>                            
+                            <li class="divider"></li>
+                            <li class="dropdown-header">PESSOA FÍSICA</li>
+                            <li><a href="#">Autônomo</a></li>
+                            <li><a href="#">Moto Taxi</a></li>
+                            <li><a href="#">Transporte Alternativo</a></li>                            
+                        </ul>
+                      </div>
+                      <div class="col-sm-4">
+                        <br>
+                        <ul>
+                            <li class="dropdown-header">EMPRESA</li>
+                            <li><a href="#">Certidão Negativa de Débitos</a></li>
+                            <li><a href="#">TFF</a></li>
+                            <li><a href="#">TLL</a></li>
+                            <li><a href="#">TLP</a></li>
+                            <li><a href="#">Comprovante de Inscrição</a></li>
+                            <li><a href="#">Baixa de Inscrição</a></li>
+                            <li><a href="#">Abertura</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">ITIV DIGITAL</li>
+                            <li><a href="#">Acesso Cartório</a></li>
+                            <li><a href="#">Acesso Contribuinte</a></li>                            
+                        </ul>
+                      </div>                         
+                    </div>
+                      <br>
+                  </li>
+                </ul>
+              </li>
+              <!--Aside Menu 
+              -->
+              <li class="dropdown yamm-fw"><a href="#" data-toggle="dropdown" class="dropdown-toggle">LEGISLAÇÃO<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li class="grid-demo">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <h3>3</h3><br>
+                      </div>
+                      <div class="col-sm-3">
+                        <h3>3</h3><br>
+                      </div>
+                      <div class="col-sm-3">
+                        <h3>3</h3><br>
+                      </div>
+                      <div class="col-sm-3">
+                        <h3>3</h3><br>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li> 
+              <li class="yamm"><a href="http://www.transparencia.feiradesantana.ba.gov.br/" target="_blank">TRANSPARÊNCIA</a></li>
+              <li class="yamm"><a href="#">FALE CONOSCO</a></li>
+            </ul>            
+          </div>
+        </div>
+    </div>
+    <!-- navbar ENDS -->
+    
+    <!-- carousel start -->
+    <div class="container">
+        <div id="carousel1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img alt="Bootstrap template" src="bundles/images/slider/iptu2016.jpg">
+                    <div class="carousel-caption">                        
+                            <h1>IPTU 2016</h1>
+                            <div class="well">
+                                <p>
+                                    O IPTU é um investimento que o cidadão faz na cidade. É o imposto incidente sobre a propriedade, 
+                                    o domínio útil ou a posse de todos os bens imóveis, edificados (residenciais e não residenciais) 
+                                    ou não edificados (terrenos), situados no território do município e que, independente de sua localização,
+                                    não se destine à exploração agrícola, pecuária, extrativa vegetal ou agro-industrial.
+                                </p>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img alt="Bootstrap template" src="bundles/images/slider/atendimento.png">                    
+                </div>
+                <div class="item">
+                    <img alt="Bootstrap template" src="bundles/images/slider/transparencia.PNG">
+                    <div class="carousel-caption">                           
+                            <div class="well" style="background-color: rgba(117, 195, 129, 0.9);">
+                                <h1>Portal da Transparência</h1>
+                                <p>
+                                    O Portal de Acesso do Cidadão aos Principais Dados do Governo Municipal.
+                                </p>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <ul class="nav nav-pills nav-justified">
+                <li data-target="#carousel1" data-slide-to="0" class="active">
+                    <a href="#">IPTU 2016<small>Emissão de 2ª Via de Carnê </small></a>
+                </li>
+                <li data-target="#carousel1" data-slide-to="1">
+                    <a href="#">ATENDIMENTO ONLINE<small>Central de Atendimento da NF-e</small></a>
+                </li>
+                <li data-target="#carousel1" data-slide-to="2">
+                    <a href="#">TRANSPARÊNCIA<small>Acesse Dados do Governo Municipal</small></a>
+                </li>
+            </ul>
+        </div>
+        <br>
+    </div>
+    <!-- carousel ends -->
+  
+    <!-- services START -->
+    <div class="container-fluid" style="background-color: rgba(242, 239, 235, 0.66)">
+        <div class="row">
+            <h1 class="page-header center"> SERVIÇOS ONLINE </h1>
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="box">
+                    <div class="icon">
+                        <div class="image"><span class="glyphicon glyphicon-home btn-lg white"></span></div>
+                        <div class="info">
+                            <h3 class="title">IPTU 2016</h3>
+                            <p>
+                                Acesse os principais serviços
+                            </p>
+                            <div class="more">
+                                <a href="#" title="Title Link"><i class="fa fa-plus"></i> Acessar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="box">
+                    <div class="icon">
+                        <div class="image"><span class="glyphicon glyphicon-list-alt btn-lg white"></span></div>
+                        <div class="info">
+                            <h3 class="title">ITIV DIGITAL</h3>
+                            <p>
+                                Acesse os principais serviços
+                            </p>
+                            <div class="more">
+                                <a href="#" title="Title Link"><i class="fa fa-plus"></i> Acessar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="box">
+                    <div class="icon">
+                        <div class="image"><span class="glyphicon glyphicon-print btn-lg white"></span></div>
+                        <div class="info">
+                            <h3 class="title">NOTA ELETRÔNICA</h3>
+                            <p>
+                                Acesse os principais serviços
+                            </p>
+                            <div class="more">
+                                <a href="#" title="Title Link"><i class="fa fa-plus"></i> Acessar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">           
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="box">
+                    <div class="icon">
+                        <div class="image"><span class="glyphicon glyphicon-user btn-lg white"></span></div>
+                        <div class="info">
+                            <h3 class="title">PESSOA FÍSICA</h3>
+                            <p>
+                                Acesse os principais serviços
+                            </p>
+                            <div class="more">
+                                <a href="#" title="Title Link"><i class="fa fa-plus"></i> Acessar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="box">
+                    <div class="icon">
+                        <div class="image"><span class="glyphicon glyphicon-briefcase btn-lg white"></span></div>
+                        <div class="info">
+                            <h3 class="title">EMPRESA</h3>
+                            <p>
+                                Acesse os principais serviços
+                            </p>
+                            <div class="more">
+                                <a href="#" title="Title Link"><i class="fa fa-plus"></i> Acessar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-4">
+                <div class="box">
+                    <div class="icon">
+                        <div class="image"><span class="glyphicon glyphicon-lock btn-lg white"></span></div>
+                        <div class="info">
+                            <h3 class="title">ACESSO RESTRITO</h3>
+                            <p>
+                                Acesse os principais serviços
+                            </p>
+                            <div class="more">
+                                <a href="#" title="Title Link"><i class="fa fa-plus"></i> Acessar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services ENDS -->
+    
+    <!-- news STARTS -->
+    <div class="container-fluid" style="background-color: #FFF">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-8 news">
+                <h1 class="page-header"> ÚLTIMAS NOTÍCIAS </h1>  
+                <hr>
+                <div class="span8">
+                    <h3 class="text-danger"> TJ rejeita ações contra IPTU de Feira </h3>
+                    <p>O Pleno do Tribunal de Justiça do Estado da Bahia julgou nesta sexta-feira (9), no mérito, ações que propunham anular a lei municipal que atualizou a planta genérica do IPTU em Feira de Santana, no exercício 2014.
+                        A decisão foi contrária aos questionamentos, dando razão à Prefeitura à forma como tecnicamente procedeu para adotar a medida – com aprovação da Câmara de Vereadores.
+                    </p>
+                    <div>
+                        <span><a href="#" class="btn btn-danger btn-xs">Continue Lendo</a></span>
+                        <span class="badge badge-success">Posted 2012-08-02 20:47:04</span>
+                    </div> 
+                    <hr>
+                    <h3 class="text-danger">Vistoria do transporte escolar começa na segunda</h3>
+                    <p>'I am bound to Tahiti for more men.'
+                        'Very good. Let me board you a moment—I come in peace.' With that he leaped from the canoe, swam to the boat; and climbing the gunwale, stood face to face with the captain.
+                        'Cross your arms, sir; throw back your head. Now, repeat after me. As soon as Steelkilt leaves me, I swear to beach this boat on yonder island, and remain there six days. If I do not, may lightning strike me!'A pretty scholar,' laughed the Lakeman. 'Adios, Senor!' and leaping into the sea, he swam back to his comrades.</p>
+                    <div class="news">
+                        <span><a href="#" class="btn btn-danger btn-xs">Continue Lendo</a></span>
+                        <span class="badge badge-success">Posted 2012-08-02 20:47:04</span>
+                    </div>     
+                    <hr>
+                </div>
+                <a href="http://www.feiradesantana.ba.gov.br/busca.asp" target="_blank" class="btn btn-primary text-center" style="outline: 0;">Mais Notícias</a>                    
+            </div>
+            
+            <div class="col-xs-12 col-sm-6 col-lg-4 files">
+                <h1 class="page-header"> DESTAQUES </h1>
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i> Código Tributário Municipal </h4>
+                    </div>
+                    <div class="panel-body text-center">
+                        <p>Código tributário municipal atualizado até 2014, com as leis complementares, decretos e portarias.
+                            <a href="arquivos/CTM.pdf" target="_blank">CLIQUE AQUI</a> para fazer o download.
+                        </p>
+                        <a href="#" class="btn btn-success">Download</a>
+                    </div>
+                </div>
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i> TFF-Lei Complementar Nº074</h4>
+                    </div>
+                    <div class="panel-body text-center">
+                        <p>Dispõe sobre a Taxa de Licença de Localização - TLL, e da Taxa de Fiscalização de Funcionamento - TFF. 
+                            <a href="arquivos/CTM.pdf" target="_blank">CLIQUE AQUI</a> para fazer o download da Lei.
+                        </p>
+                        <a href="#" class="btn btn-success">Download</a>
+                    </div>
+                </div>                
+            </div>
+        </div>        
+    </div>
+    <!-- news ENDS -->
+    
+    <!-- FAQ STARTS -->
+    <div class="container-fluid">
+        <div class="row faq">
+            <div class="col-xs-12 col-sm-6 col-lg-6">
+                <div class="panel panel-info">
+                    <div class="panel-heading center">
+                        <h4><i class="fa fa-fw fa-check"></i> NFS-e Duvidas Frequentes</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel-group" id="accordion">                             
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Como Cadastrar uma Empresa?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p style="font-size: 10pt;">
+                                            Seguem os passos para cadastramento no site www.webiss.com.br/feiradesantanaba: <br /> 
+                                        </p>
+                                        <ol>
+                                            <li>Entrar no site www.webiss.com.br/feiradesantanaba</li>
+                                            <li>Clicar em "acesso público" e digitar o código de verificação</li>
+                                            <li>Clicar em "Funções WebISS"</li>
+                                            <li>Clicar em CeC - CADASTRAMENTO</li>
+                                            <li>Clicar em "Solicitar CeC"</li>
+                                            <li>No "1º passo" digitar o e-mail para validação e esperar chegar o código (questão de minutos)</li>
+                                            <li>No "2º passo" digitar o e-mail e o código</li>
+                                            <li>Cadastrar a "FICHA DE INSCRIÇÃO"</li>
+                                            <li>Imprimir ficha de inscrição</li>
+                                            <li>Trazer documentos exigidos na ficha cadastral e aguardar a aprovação (por e-mail)</li>                                          
+                                        </ol>
+                                        <p style="font-size: 10pt;">
+                                            Depois disso, entre em contato conosco para passarmos mais informações.<br /> 
+                                            Dúvidas e respostas estão disponíveis no próprio site, nos links "Perguntas e Respostas" e "Downloads e Manuais". 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Como Cadastrar Pessoa Física?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        The steps involved in this process are really simple. All you need to do is:
+                                        <ul>
+                                            <li>Register an account</li>
+                                            <li>Activate your account</li>
+                                            <li>Go to the <strong>Themes</strong> section and upload your theme</li>
+                                            <li>The next step is the approval step, which usually takes about 72 hours.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Como Emitir Nota Fiscal de Serviços?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Here, at <strong>PrepBootstrap</strong>, we offer a great, 70% rate for each seller, regardless of any restrictions, such as volume, date of entry, etc.
+                                        <br />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">Como Consultar e Imprimir CeC??</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        There are a number of reasons why you should join us:
+                                        <ul>
+                                            <li>A great 70% flat rate for your items.</li>
+                                            <li>Fast response/approval times. Many sites take weeks to process a theme or template. And if it gets rejected, there is another iteration. We have aliminated this, and made the process very fast. It only takes up to 72 hours for a template/theme to get reviewed.</li>
+                                            <li>We are not an exclusive marketplace. This means that you can sell your items on <strong>PrepBootstrap</strong>, as well as on any other marketplate, and thus increase your earning potential.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">Como Reenviar Senha?</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseEight" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        The best way to transfer funds is via Paypal. This secure platform ensures timely payments and a secure environment. 
+                                    </div>
+                                </div>
+                            </div>                                        
+                        </div>
+                        <div class="text-center"><a href="#" class="btn btn-info ">Ver todas</a> </div>
+                    </div>
+                </div>                              
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-6">
+                <div class="panel panel-danger">
+                    <div class="panel-heading center">
+                        <h4><i class="fa fa-fw fa-check"></i> Cadastro Eletrônico de Contribuintes</h4>
+                    </div>
+                    <div class="panel-body">
+                        <h5> Instruções para acesso ao Cadastro Eletrônico de Contribuintes - CeC </h5>
+                        <p>
+                            <b>1º Passo:</b> Acesse o sistema de NFS-e Webiss.<br /> <br />
+                            <b>2º Passo:</b> Marque a opção Acesso Público.<br /> <br />
+                            <b>3º Passo:</b> Preencha o código de verificação e em seguida clique em ENTRAR.<br /> <br />
+                            <b>4º Passo:</b> Clique no botão CADASTRAMENTO na parte inferior da página.<br /> <br />
+                            <b>5º Passo:</b> Leia as instruções e clique no link para acesso ao CeC.<br />
+                        </p>
+                        <div class="text-center"> 
+                            <a href="#" class="btn btn-danger "> Acesse o WebISS </a> <span> 
+                            <a href="#" class="btn btn-danger "> Download Manual </a> </span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br> 
+        </div>
+    </div>
+    
+    <!-- FOOTER STARTS -->   
+    
+    <footer class="footer-distributed container-fluid">
+        <div class="footer-left">
+
+                <h3>Sefaz<span>Fsa</span></h3>
+
+                <p class="footer-links">
+                        <a href="#">Início</a>
+                        ·
+                        <a href="#">Serviços</a>
+                        ·
+                        <a href="#">Legislação</a>
+                        ·
+                        <a href="#">Transparência</a>				
+                        ·
+                        <a href="#">Contato</a>
+                </p>
+
+                <p class="footer-company-name">Secretaria Municipal da Fazenda  &copy; 2011-2016</p>
+        </div>
+
+        <div class="footer-center">
+
+                <div>
+                    <a href="https://goo.gl/maps/7Cb7B2UTZKB2" target="_blank" >
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>Rua Barão de Cotegipe, 764 - Centro</span> Feira de Santana, Bahia</p>
+                    </a>
+                </div>
+
+                <div>
+                        <i class="fa fa-phone"></i>
+                        <p>(75) 3602 8400</p>
+                </div>
+
+                <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@company.com">suporte@sefaz.fsa.gov.ba</a></p>
+                </div>
+
+        </div>
+
+        <div class="footer-right">
+
+                <p class="footer-company-about">
+                        <span>Sobre a SEFAZ</span>
+                        A SEFAZ é, atualmente, responsável por                                        
+                        realizar primordialmente as funções de:
+                        controlar a arrecadação de tributos estaduais e
+                        controlar a despesa do Município.
+                </p>
+
+                <div class="footer-icons">
+
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+
+                </div>
+
+        </div>
+    </footer>
+    
+    <!-- FOOTER ENDS -->
+    
+{% endblock %}
+
+{% block stylesheets %}   
+    
+    <link rel="stylesheet" href="{{asset('bundles/css/bootstrap.css')}}" />
+    <link rel="stylesheet" href="{{asset('bundles/css/bootstrap.min.css')}}" /> 
+    <link rel="stylesheet" href="{{asset('bundles/css/style.css')}}" />
+    <link rel="stylesheet" href="{{asset('bundles/css/yamm.css')}}" />
+    <link rel="stylesheet" href="{{asset('http://fonts.googleapis.com/css?family=Montserrat')}}" type="text/css" /> 
+    <link rel="stylesheet" href="{{asset('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{asset('bundles/fonts/glyphicons-halflings-regular.ttf')}}" type="text/fonts" />
+    <link rel="stylesheet" href="{{asset('bundles/fonts/glyphicons-halflings-regular.eot')}}" type="text/fonts" />
+    <link rel="stylesheet" href="{{asset('bundles/fonts/glyphicons-halflings-regular.woff')}}" type="text/fonts" />
+ 
+{% endblock %}
+
+{% block javascripts %}
+    
+    <script src={{asset('https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')}}></script>
+    <script src={{asset('http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')}}></script>
+    <script type="text/javascript" src={{asset('bundles/js/main.js')}}></script>
+    <script src={{asset('http://maps.google.com/maps/api/js?sensor=false')}}></script>
+    
+    
+{% endblock %}
